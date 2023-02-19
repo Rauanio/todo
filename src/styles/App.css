@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.App {
+  width: 800px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 700;
+}
+
+.myInput {
+  width: 100%;
+  border: 2px solid #437dd4;
+  padding: 5px 15px;
+  margin: 5px 0;
+  outline: none;
+}
+
+.myBtn {
+  border: 2px solid #437dd4;
+  color: #437dd4;
+  font-size: 14px;
+  background-color: transparent;
+  padding: 5px 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.post {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid #437dd4;
+  align-items: center;
+  padding: 15px;
+  margin-top: 15px;
+}
+
+hr {
+  margin: 15px 0;
+  border: 1px solid #437dd4;
+}
+
+select {
+  border: 2px solid #437dd4;
+  outline: none;
+  border-radius: 5px;
+  font-weight: 700;
+  padding: 5px;
+}
+
+option {
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.animation-enter {
+  transform: translate(-150px);
+}
+.animation-enter-active {
+  transform: translate(0px);
+  transition: all 500ms ease-in;
+}
+.animation-exit {
+  opacity: 1;
+}
+.animation-exit-active {
+  transform: translate(-150px);
+  transition: all 500ms ease-in;
+}
+
+.loader-animation {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px dashed #437dd4;
+  animation: rotate 3s infinite linear;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg) scale(1);
+  }
+  to {
+    transform: rotate(360deg) scale(1.3);
+  }
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+}
+
+.page-wrapper {
+  display: flex;
+  margin-top: 30px;
+}
+
+.page {
+  border: 2px solid #437dd4;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.page-active {
+  border: 3px solid #1766dd;
+  font-weight: bold;
+}
+
+.nav {
+  background-color: #437dd4;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.nav-links {
+  float: right;
+}
+
+.nav-links a {
+  text-decoration: none;
+  margin-left: 10px;
+  color: #e0e0e0;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.container {
+  min-width: 800px;
+  margin: 0 auto;
+}
+
+.comments{
+  margin-top: 15px;
+  border: 2px solid #437dd4;
+  padding: 10px;
+}
+
+.post-details {
+  border: 3px solid #1766dd;
+  padding: 10px;
+  margin: 20px 0 40px;
+}
+
+.post-title{
+  margin-bottom: 10px;
+}
+
+.post-link{
+  text-decoration: none;
+  color:black
+}
